@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: azure;
+    height: 100px;
+}
+
+.navi ul {
+    list-style: none;
+}
+
+.navi>ul>li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.navi li {
+    cursor: pointer;
+}
+
+.navi li ul {
+    position: absolute;
+    display: none;
+}
+
+.navi li:hover ul {
+    display: block;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+li {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: azure;
+    height: 50px;
+}
+
+footer p {
+    margin: 0;
+}
